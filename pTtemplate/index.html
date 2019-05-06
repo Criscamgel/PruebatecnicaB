@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!-- Script-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="d-none d-md-block d-lg-block">
+    <div class="row">
+      <div id="bartop" class="col-sm col-md col-lg text-right">Mis pedidos · Contácto</div>
+    </div>
+    <div class="row">
+      <div class="col-sm col-md text-center">
+        <!-- Lado Izquierdo -->
+        <div class="row">
+          <div class="col-sm col-md text-center"><input class="search" type=text placeholder="¿Qué estas buscando?" />
+          </div>
+        </div>
+      </div>
+      <!-- Logo -->
+      <div class="col-sm col-md text-center">
+        <img class="logo" src="./img/logo.png" alt="">
+      </div>
+      <!-- Lado derecho -->
+      <div class="col-sm col-md text-center">
+
+        <div class="row itemSup">
+          <div class="col-sm col-md text-center"><img src="./img/puntoRef.png" alt="">Tiendas</div>
+          <div class="col-sm col-md text-center"><img src="./img/corazon.png" alt="">Lista de deseos</div>
+          <div class="col-sm col-md text-center"><img src="./img/maleta.png" alt="">Mi bolsa</div>
+        </div>
+      </div>
+    </div>
+    <!-- Menú -->
+    <div class="row">
+      <div class="col-sm col-md-2 text-center"></div>
+
+      <div class="col-sm col-md-8 text-center" id="menuCont">
+        <div class="row">
+          <div class="col-md"><a href="">JEANS</a></div>
+          <div class="col-md"><a href="">DENIM</a></div>
+          <div class="col-md"><a href="">ROPA</a></div>
+          <div class="col-md"><a href="">ACCESORIOS</a></div>
+          <div class="col-md"><a href="">BÁSICOS INFALTABLES</a></div>
+          <div class="col-md"><a href="">NOVEDADES</a></div>
+          <div class="col-md"><a href="">REBAJAS</a></div>
+        </div>
+      </div>
+
+      <div class="col-sm col-md-2 text-center"></div>
+    </div>
+  </header>
+  <!-- responsive header -->
+  <header class="d-block d-sm-block d-md-none d-lg-none">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-sm-6 text-right topGrayBlack">ENVÍO GRATIS X COMPRA</div>
+        <div class="col-6 col-sm-6 text-left topGray">SUPERIOR A $150.000</div>
+      </div>
+    </div>
+
+    <div class="container menuSmall">
+      <div class="row">
+        <div class="col-2 col-sm text-center"><img src="./img/hamburguer.png" alt=""></div>
+        <div class="col-2 col-sm text-center"><img src="./img/lupa.png" alt=""></div>
+        <div class="col-4 col-sm text-center"><img id="logoSmall" src="./img/logo.png" alt=""></div>
+        <div class="col-2 col-sm text-center"><img src="./img/puntoRef.png" alt=""></div>
+        <div class="col-2 col-sm text-center"><img src="./img/maleta.png" alt=""></div>
+      </div>
+    </div>
+
+    <!-- Menu -->
+
+  </header>
+
+  <div class="container">
+    <div class=" row col-sm col-md">
+
+      <div class="col-1 col-sm-1 col-md-4"></div>
+
+      <div class="col-10 col-sm-10 col-md">
+        <div class="tituloUno d-none d-md-block d-lg-block text-center">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR
+          ADIPISCING ELIT</div>
+        <div class="tituloResponsiveDos d-block d-sm-block d-md-none d-lg-none text-center">LOREM IPSUM DOLOR SIT AMET,
+          CONSECTETUR ADIPISCING ELIT</div>
+      </div>
+
+      <div class="col-1 col-sm-1 col-md-4 text-center d-none d-md-block d-lg-block"></div>
+    </div>
+
+    <div class="row col-sm col-md text-center">
+
+      <div class="col-1 col-sm-1 col-md-2 text-center d-none d-md-block d-lg-block"></div>
+      <div class="col-sm col-md text-center">
+        <div class="parrafo d-none d-md-block d-lg-block">
+          <p>Nam sodales, arcu a dignissim faucibus, magna eros mattis leo, sed luctus risus arcu id ligula. Donec vitae
+            ante tellus. Sed vitae cursus risus. In maximus eros malesuada, sollicitudin risus finibus, gravida augue.
+            Phasellus sagittis risus urna, sit amet dapibus nisi congue vitae.
+
+            Suspendisse aliquam elementum sapien et malesuada. Integer eget lectus dolor. In non est lacinia, porta
+            turpis
+            quis, egestas nisl. Maecenas nec lacus vitae leo semper consectetur quis at purus. Integer non est sit amet
+            sem sollicitudin facilisis</p>
+        </div>
+
+        <div class="parrafoSmallDos text-left d-block d-sm-block d-md-none d-lg-none text-center">
+          <p>Nam sodales, arcu a dignissim faucibus, magna eros mattis leo, sed luctus risus arcu id ligula. Donec vitae
+            ante tellus. Sed vitae cursus risus. In maximus eros malesuada, sollicitudin risus finibus, gravida augue.
+            Phasellus sagittis risus urna, sit amet dapibus nisi congue vitae.
+
+            Suspendisse aliquam elementum sapien et malesuada. Integer eget lectus dolor. In non est lacinia, porta
+            turpis
+            quis, egestas nisl. Maecenas nec lacus vitae leo semper consectetur quis at purus. Integer non est sit amet
+            sem sollicitudin facilisis</p>
+        </div>
+      </div>
+      <div class="col-1 col-sm-1 col-md-2 text-center d-none d-md-block d-lg-block"></div>
+    </div>
+  </div>
+  <!-- Baner Slider -->
+  <div class="row">
+    <div class="col-sm col-md-1 text-center"></div>
+
+    <div class="col-sm col-md text-center">
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="./img/slideOneOk.png" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./img/slideTwoOk.png" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./img/slideThreeOk.png" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <div class="col-sm col-md-1"></div>
+  </div>
+
+  <!-- Texto -->
+
+  <div class="row col-sm col-md">
+
+    <div class="col-sm col-md-2"></div>
+    <div class="col-sm col-md">
+      <div class="tituloDos d-none d-md-block d-lg-block">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT</div>
+      <div class="tituloResponsiveUno d-block d-sm-block d-md-none d-lg-none text-left">LOREM IPSUM DOLOR SIT AMET,
+        CONSECTETUR ADIPISCING ELIT</div>
+      <p class="contentDos d-none d-md-block d-lg-block">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+        diam nonummy nibh euismod
+        tincidunt ut laoreet
+        dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+        suscipit lobortis nisl ut aliquip ex ea commodo consequat.<br><br>
+
+        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu
+        feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+        delenit augue duis dolore te feugait nulla facilisi.
+        Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+        dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+        suscipit lobortis nisl ut aliquip ex ea commodo consequat.<br><br>
+
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+        dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+        suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+        vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros.</p>
+
+      <div class="parrafoSmall text-left d-block d-sm-block d-md-none d-lg-none">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+          tincidunt ut laoreet
+          dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+          suscipit lobortis nisl ut aliquip ex ea commodo consequat.<br><br>
+
+          Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu
+          feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+          delenit augue duis dolore te feugait nulla facilisi.
+          Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+          dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+          suscipit lobortis nisl ut aliquip ex ea commodo consequat.<br><br>
+
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+          dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+          suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+          vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros.</p>
+      </div>
+    </div>
+
+    <div class="col-sm col-md d-none d-md-block d-lg-block">
+      <div class="tituloDos">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT</div>
+      <p class="contentDos">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+        tincidunt ut laoreet
+        dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+        suscipit lobortis nisl ut aliquip ex ea commodo consequat.<br><br>
+
+        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu
+        feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+        delenit augue duis dolore te feugait nulla facilisi.<br><br>
+
+        Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+        dolore magna aliquam erat volutpat.</p>
+    </div>
+
+    <div class="col-sm col-md d-block d-sm-block d-md-none d-lg-none">
+      <div class="tituloResponsiveUno">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT</div>
+      <p class="parrafoSmall">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+        tincidunt ut laoreet
+        dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+        suscipit lobortis nisl ut aliquip ex ea commodo consequat.<br><br>
+
+        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu
+        feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+        delenit augue duis dolore te feugait nulla facilisi.<br><br>
+
+        Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+        dolore magna aliquam erat volutpat.</p>
+    </div>
+
+    <div class="col-sm col-md-2"></div>
+
+  </div>
+  <hr>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm col-md-6 text-left">
+        <div class="tituloDos d-none d-md-block d-lg-block">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT
+        </div>
+        <p class="contentDos d-none d-md-block d-lg-block">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+          diam nonummy nibh euismod
+          tincidunt ut laoreet
+          dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+          suscipit lobortis nisl ut aliquip ex ea commodo consequat.<br><br>
+
+          Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu
+          feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+          delenit augue duis dolore te feugait nulla facilisi.<br><br>
+
+          Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+          dolore magna aliquam erat volutpat.</p>
+      </div>
+
+      <div class="col-sm col-md tituloResponsiveDos d-block d-sm-block d-md-none d-lg-none text-left">LOREM IPSUM DOLOR
+        SIT AMET, CONSECTETUR ADIPISCING ELIT</div>
+      <div class="col-sm col-md d-block d-sm-block d-md-none d-lg-none text-left">
+        <p class="contentDos">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+          tincidunt ut laoreet
+          dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+          suscipit lobortis nisl ut aliquip ex ea commodo consequat.<br><br>
+
+          Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu
+          feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+          delenit augue duis dolore te feugait nulla facilisi.<br><br>
+
+          Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+          dolore magna aliquam erat volutpat.</p>
+      </div>
+      <!-- Panel Collapse -->
+      <div class="col-sm col-md-6 text-center">
+
+        <div id="accordion">
+
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                  aria-controls="collapseOne">
+                  Collapsible Group Item #1
+                </button>
+              </h5>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                  aria-expanded="false" aria-controls="collapseTwo">
+                  Collapsible Group Item #2
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                  aria-expanded="false" aria-controls="collapseThree">
+                  Collapsible Group Item #3
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                  aria-expanded="false" aria-controls="collapseThree">
+                  Collapsible Group Item #3
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                  aria-expanded="false" aria-controls="collapseThree">
+                  Collapsible Group Item #3
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                  aria-expanded="false" aria-controls="collapseThree">
+                  Collapsible Group Item #3
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="container formImg">
+    <div class="row">
+      <form class="col-sm col-md">
+        <div class="col-sm col-md">
+          <div class="tituloDos">LOREM IPSUM DOLOR SIT</div>
+          <input class="inputNormal" type=text placeholder="Item formulario" />
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm col-md">
+              <input class="inputNormal" type=text placeholder="Item formulario" />
+            </div>
+            <div class="col-sm col-md">
+              <input class="inputNormal" type=text placeholder="Item formulario" />
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm col-md">
+              <input class="inputNormal" type=text placeholder="Item formulario" />
+            </div>
+            <div class="col-sm col-md">
+              <input class="inputNormal" type=text placeholder="Item formulario" />
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <textarea class="inputParrafo" id="exampleFormControlTextarea1" placeholder="Mensaje" rows="5"></textarea>
+        </div>
+        <div class="col-sm col-md text-right">
+          <button type="submit">Enviar</button>
+
+        </div>
+
+      </form>
+      <div class="col-sm col-md text-center"><img class="imgForm" src="./img/imageFinOk.png" alt=""></div>
+    </div>
+  </div>
+
+  <footer class="d-none d-md-block d-lg-block">
+    <div class="row redfooter">
+
+      <div class="itemFooter col-md-2">
+        <div class="row">
+          <div id="imgItemCont" class="col-md-6 text-right"><img id="imgItem" src="./img/olas.png" alt=""></div>
+          <div id="imgItemCont" class="col-md-6">
+            <p>MI HORMA PERFECTA</p>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+      </div>
+
+      <div class="itemFooter col-md-2">
+        <div class="row">
+          <div id="imgItemCont" class="col-md-6 text-right"><img id="imgItem" src="./img/avion.png" alt=""></div>
+          <div id="imgItemCont" class="col-md-6">
+            <p>ENVIOS A TODO EL PAIS</p>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+      </div>
+
+      <div class="itemFooter col-md-2">
+        <div class="row">
+          <div id="imgItemCont" class="col-md-6 text-right"><img id="imgItem" src="./img/pesos.png" alt=""></div>
+          <div id="imgItemCont" class="col-md-6">
+            <p>MÉTODOS DE PAGO</p>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+      </div>
+
+      <div class="itemFooter col-md-2">
+        <div class="row">
+          <div id="imgItemCont" class="col-md-6 text-right"><img id="imgItem" src="./img/vuelta.png" alt=""></div>
+          <div id="imgItemCont" class="col-md-6">
+            <p>DEVOLUCIONES FÁCILES</p>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+      </div>
+
+      <div class="itemFooter col-md-4">
+        <img id="newsletter" src="./img/newsletter.png" alt="">
+      </div>
+    </div>
+    </div>
+
+    <div class="container bottom-footer">
+      <div class="row">
+
+        <div class="col-md">
+          <div class="col-md tittle-bottom-footer">LINKS DE INTERÉS</div>
+          <div class="col-md foItem"><a>¿QUIÉNES SOMOS?</a></div>
+          <div class="col-md foItem"><a>ÉRMINOS Y CONDICIONES</a></div>
+          <div class="col-md foItem"><a>POLÍTICA DE PRIVACIDAD</a></div>
+          <div class="col-md foItem"><a>PREGUNTAS FRECUENTES</a></div>
+        </div>
+
+        <div class="col-md">
+          <div class="col-md tittle-bottom-footer">LINKS DE INTERÉS</div>
+          <div class="col-md foItem"><a>¿QUIÉNES SOMOS?</a></div>
+          <div class="col-md foItem"><a>ÉRMINOS Y CONDICIONES</a></div>
+          <div class="col-md foItem"><a>POLÍTICA DE PRIVACIDAD</a></div>
+          <div class="col-md foItem"><a>PREGUNTAS FRECUENTES</a></div>
+        </div>
+
+        <div class="col-md">
+          <div class="col-md tittle-bottom-footer">LINKS DE INTERÉS</div>
+          <div class="col-md foItem"><a>¿QUIÉNES SOMOS?</a></div>
+          <div class="col-md foItem"><a>ÉRMINOS Y CONDICIONES</a></div>
+          <div class="col-md foItem"><a>POLÍTICA DE PRIVACIDAD</a></div>
+          <div class="col-md foItem"><a>PREGUNTAS FRECUENTES</a></div>
+        </div>
+
+        <div class="col-md">
+          <div class="col-md tittle-bottom-footer">LINKS DE INTERÉS</div>
+          <div class="col-md foItem"><a>¿QUIÉNES SOMOS?</a></div>
+          <div class="col-md foItem"><a>ÉRMINOS Y CONDICIONES</a></div>
+          <div class="col-md foItem"><a>POLÍTICA DE PRIVACIDAD</a></div>
+          <div class="col-md foItem"><a>PREGUNTAS FRECUENTES</a></div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8"><img src="./img/bottomFooter.png" alt=""></div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Footer Responsive -->
+
+  <footer class="d-block d-sm-block d-md-none d-lg-none">
+
+    <div class="redfooterRes">
+    <div class="container">
+    <div class="row">
+      <div class="itemFooterRes col-6 col-sm-6 text-center">
+        <div class="row">
+          <div id="imgItemCont" class="col-6 col-sm-6 text-right"><img id="imgItemRes" src="./img/olas.png" alt=""></div>
+          <div id="imgItemCont" class="col-5 col-sm-5">
+            <p>MI HORMA PERFECTA</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="itemFooterRes col-6 col-sm-6 text-center">
+        <div class="row">
+          <div id="imgItemCont" class="col-5 col-sm-5"><img id="imgItemRes" src="./img/avion.png" alt=""></div>
+          <div id="imgItemCont" class="col-5 col-sm-5 text-left">
+            <p>ENVIOS A TODO EL PAIS</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+          <div class="itemFooterRes col-6 col-sm-6 text-center">
+            <div class="row">
+              <div id="imgItemCont" class="col-6 col-sm-6 text-right"><img id="imgItemRes" src="./img/pesos.png" alt=""></div>
+              <div id="imgItemCont" class="col-5 col-sm-5">
+                <p>MÉTODOS DE PAGO</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="itemFooterRes col-6 col-sm-6 text-center">
+            <div class="row">
+              <div id="imgItemCont" class="col-5 col-sm-5"><img id="imgItemRes" src="./img/vuelta.png" alt=""></div>
+              <div id="imgItemCont" class="col-5 col-sm-5 text-left">
+                <p>DEVOLUCIONES FÁCILES</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>       
+      </div>
+      <div class="row">
+      <div class="itemFooter col">
+          <img id="newsletter" src="./img/newsletter.png" alt="">
+      </div>
+      </div>
+
+      <div class="row">
+          <div class="itemFooter col">
+              <img id="newsletter" src="./img/footerRes1.png" alt="">
+          </div>
+          </div>
+
+          <div class="row">
+              <div class="itemFooter col">
+                  <img id="newsletter" src="./img/footerRes2.png" alt="">
+              </div>
+              </div>
+
+              <div class="row">
+                  <div class="itemFooter col">
+                      <img id="newsletter" src="./img/footerRes3.png" alt="">
+                  </div>
+                  </div>
+      
+  </footer>
+
+</body>
+
+</html>

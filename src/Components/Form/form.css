@@ -1,0 +1,59 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr;
+    grid-gap: 5px;
+}
+.element {
+    padding: 12px !important;
+    margin: 5px 10px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}   
+
+input {
+    font-size: 15px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.btnSubmit{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 5px;
+}
+
+button:disabled,
+button[disabled]{
+  background: #7f91f9;
+}
+.btn{
+    grid-column: 2 / 3;
+    margin-top: 10px;
+}
+
+.errorMesagge {
+    grid-column: 2 / 3;
+    color: #FF5722;
+    font-weight: 600;
+    margin-top: 27px;
+    font-size: 12px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 500px) {
+
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 5px;
+    }
+
+    .element {
+        grid-column: 2 / 3;
+    }
+  }

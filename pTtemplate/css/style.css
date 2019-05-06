@@ -1,0 +1,241 @@
+@font-face {
+  font-family: monserrat-reg;
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: quicksand-medium;
+  src: url(../fonts/Quicksand-Medium.ttf);
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: monserrat-reg !important;
+}
+
+input:focus {
+  outline-width: 0;
+}
+
+/* Estilos generales */
+
+header{
+  font-family: monserrat-reg;
+  font-size: 12px;
+}
+
+a:visited {
+  color:#000;
+}
+
+.tituloUno{
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.tituloDos{
+  font-family: quicksand-medium;
+  font-size: 15px;
+  margin-top: 80px;
+  color: #324772;
+}
+
+.contentDos{
+  font-size: 11px;
+  margin-top: 15px;
+}
+
+button{
+  background: #324772;
+  color: #ddd;
+  border: inherit;
+  padding: 5px 25px 5px 25px;
+}
+
+hr{
+  border: 0.4px solid gray !important;
+}
+
+
+/* Header */
+
+.search {
+  background: url(../img/lupa.png) no-repeat scroll 300px 16px;
+  background-size: 25px;
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid #000;
+  height: 50px;
+  font-family: monserrat-reg;
+  font-size: 12px;
+  padding-top: 25px;
+}
+
+.inputNormal{
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #000;
+  font-size: 12px;
+  height: 50px;
+  padding-top: 25px;
+}
+
+.inputParrafo{
+  margin-top: 25px;
+  width: 100%;
+  border: 1px solid #000;
+  font-size: 12px;
+}
+
+#bartop{
+  margin: 8px 30px 30px 0px;
+}
+
+.logo{
+  width: 25%;
+}
+
+.row .itemSup div img{
+  width: 25%;
+}
+
+#menuCont{
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+#menuCont div a:hover{
+  color: #c8403e;
+  text-decoration: inherit;
+}
+
+.parrafo{
+  margin-top: 20px;
+  font-size: 11px
+}
+
+.card-header{
+  height: 50px;
+}
+
+.btn-link{
+  font-size: 12px !important;
+}
+
+.card-body{
+  font-size: 11px;
+}
+
+#accordion{
+  padding-top: 70px;
+}
+
+.imgForm{
+  margin-top: 80px;
+}
+
+.redfooter{
+  margin-top: 50px;
+  background: #B22629;
+  color: white; 
+}
+
+.redfooter div img{
+  width: 25%;
+}
+
+#newsletter{
+  width:100%;
+}
+
+.itemFooter p{
+  font-size: 12px;  
+  padding-top: 30px;
+}
+
+#imgItem{
+  width: 55%;
+  padding: 10px 5px 0px 0px;
+}
+
+#imgItemCont{
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.bottom-footer{
+  font-size: 10px;
+  padding: 20px 0px 20px 0px;
+  color: gray;
+}
+
+.foItem{
+  padding-bottom: 10px;
+}
+
+.tittle-bottom-footer{
+  font-size: 12px;
+  font-weight: 700;
+  padding-bottom: 10px;
+  color: #000;
+}
+
+/* Responsive */
+
+.topGrayBlack, .topGray{
+  color: white;
+  padding: 5px 0px 5px 0px;
+}
+
+.topGrayBlack{
+  background: rgb(46, 46, 46);  
+}
+
+.topGray{
+  background: rgb(156, 156, 156);
+}
+
+.menuSmall{
+  margin: 20px 0px 70px 0px;
+}
+
+.menuSmall img{
+  width: 80%;
+}
+
+#logoSmall{
+  width: 60%;
+}
+
+.tituloResponsiveUno{
+  color: #324772;
+  font-size: 16px;
+  margin: 15px 0px 20px 0px;
+}
+
+.parrafoSmall{
+  font-size: 12px;
+}
+
+.tituloResponsiveDos{
+  font-size: 18px;
+  margin: 15px 0px 20px 0px;
+}
+
+.itemFooterRes{
+  font-size: 12px;
+  padding: 10px 5px 10px 5px; 
+}
+
+#imgItemRes{
+  width: 50%;
+}
+
+.redfooterRes{
+  background: #B22629;
+  color: white; 
+}
