@@ -6,6 +6,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get('/aviones', function(req, res){
+
+    res.setHeader('Access-Control-Allow-Origin', '*');
     
     const aviones = [
         {id: "1", icon: 'plane', text: "Boening"},
